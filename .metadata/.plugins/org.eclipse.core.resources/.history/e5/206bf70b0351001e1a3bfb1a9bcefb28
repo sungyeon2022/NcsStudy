@@ -1,0 +1,9 @@
+import java.util.*;
+public class check {
+
+	public static void main(String[] args) {
+		String arr[] = {"조성연","정승규"};
+		System.out.println(Arrays.toString(arr));
+		System.out.println(arr.length);
+	}
+}

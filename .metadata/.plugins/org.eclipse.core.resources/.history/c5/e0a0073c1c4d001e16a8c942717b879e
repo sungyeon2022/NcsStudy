@@ -1,0 +1,23 @@
+import java.util.*;
+import java.util.Spliterator.OfPrimitive;
+
+public class help {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		boolean sosu = false;
+		for(int i = 2; i<num;i++) {
+			if(num%i==0) {
+				System.out.println("소수가 아님!");
+				break;
+			}
+		}
+	}
+
+}
+
+/*
+ * String s = Integer.toString(a); String s2 = Integer.toString(a);
+ * System.out.println(s==s2); String s3 = "10"; String s4 = "10";
+ * System.out.println(s3==s4);
+ */

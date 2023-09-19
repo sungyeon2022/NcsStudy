@@ -1,0 +1,98 @@
+import java.util.*;
+
+class Solution {
+	int maxx;
+	int maxy;
+    public  int[] solution(String[] park, String[] routes) {
+    	
+        int[] answer = {};
+        maxx = park[0].length();
+        maxy = park.length;
+        int start[]= new int[2];
+        for(int i = 0;i<park.length;i++) {
+        	if(park[i].contains("S")) {
+        	start[1] = park[i].indexOf("S");
+        	start[0] = i;
+        	}
+        }
+        for(int i = 0; i < routes.length;i++) {
+        	String[] moving = routes[i].split(" ");
+        	if(routes[0]=="E") {
+        		
+        	}else if (routes[0]=="W") {
+				
+			}
+        	else if (routes[0]=="N") {
+        	
+        	}
+        	else if (routes[0]=="S") {
+    	
+        	}
+        }
+        System.out.println(Arrays.toString(start));
+        return answer;
+    }
+    public int mw(String[] park ,int dis, int[] loca) {
+    	int indexloca = 0;
+		for(int i = 1;i<=dis;i++) {
+			indexloca = loca[1];
+			if(indexloca-1>0&&(park[loca[0]].charAt(indexloca-1)=='X')) {
+				indexloca -= 1;
+			}else {
+				break;
+			}
+		}
+    	return indexloca;
+    }
+    public int ms(String[] park ,int dis, int[] loca) {
+    	int indexloca = 0;
+		for(int i = 1;i<=dis;i++) {
+			indexloca = loca[0];
+			if(indexloca+1>maxy&&(park[indexloca+1].charAt(0)=='X')) {
+				indexloca += 1;
+			}else {
+				break;
+			}
+		}
+    	return indexloca;
+    }
+    public int me(String[] park ,int dis, int[] loca) {
+    	int indexloca = 0;
+		for(int i = 1;i<=dis;i++) {
+			indexloca = loca[0];
+			if(indexloca+1>maxx&&(park[loca[0]].charAt(indexloca+1)=='X')) {
+				indexloca += 1;
+			}else {
+				break;
+			}
+		}
+    	return indexloca;
+    }
+    public int mn(String[] park ,int dis, int[] loca) {
+    	int indexloca = 0;
+		for(int i = 1;i<=dis;i++) {
+			indexloca = loca[0];
+			if(indexloca+1<maxy&&(park[indexloca-1].charAt(0)=='X')) {
+				indexloca += 1;
+			}else {
+				break;
+			}
+		}
+    	return indexloca;
+    }
+}
+
+
+public class Std {
+
+	public static void main(String[] args) {
+		Solution sol = new Solution();
+		String[] c = {"SOO","OXX","OOO"};
+		String[] r = {"E 2","S 2","W 1"};
+		sol.solution(c, r);
+		int a  = 10;
+		/**/
+		
+	}
+
+}

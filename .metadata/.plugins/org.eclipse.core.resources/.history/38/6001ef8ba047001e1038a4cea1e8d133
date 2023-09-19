@@ -1,0 +1,28 @@
+import java.util.*;
+
+class Solution {
+    public int solution(int[] picks, String[] minerals) {
+        int answer = 0;
+        return answer;
+    }
+}
+
+
+public class Std {
+
+	public static void main(String[] args) {
+		Solution sol = new Solution();
+		String[][] c = { {"science", "12:40", "50"}, {"music", "12:20", "40"},
+				{"history", "14:00", "30"},{"computer", "12:30", "100"} };
+		
+		int a  = 10;
+		String s = Integer.toString(a);
+		String s2 = Integer.toString(a);
+		System.out.println(s==s2);
+		String s3 = "10";
+		String s4 = "10";
+		System.out.println(s3==s4);
+		
+	}
+
+}

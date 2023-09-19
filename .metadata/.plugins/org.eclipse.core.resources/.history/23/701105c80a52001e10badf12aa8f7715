@@ -1,0 +1,23 @@
+import java.util.Arrays;
+
+public class mypractice {
+
+	public static void main(String[] args) {
+		int[] arr = new int[10];
+		for(int i = 0;i<arr.length;i++) {
+			arr[i]=(int)(Math.random()*10)+1;
+		}
+		System.out.println("mian arr : "+Arrays.toString(arr));
+		name(arr);
+		System.out.println("mian arr : "+Arrays.toString(arr));
+	}
+	public static void name(int[] a) {
+		System.out.println(Arrays.toString(a));
+		int temp = a[1];
+		a[1]=a[0];
+		a[0]=temp;
+		System.out.println(Arrays.toString(a));
+	}
+
+	
+}

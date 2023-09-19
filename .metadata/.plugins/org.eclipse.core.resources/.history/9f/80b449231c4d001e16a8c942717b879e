@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class help {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int result = 0;
+		for (int i = 1; i <= num; i++) {
+			if (i == num) {
+				result = i + result;
+				System.out.print((i));
+			} else {
+				result = i + result;
+				System.out.print((i) + " + ");
+			}
+		}
+		System.out.println(" = " + result);
+	}
+
+}
+
+/*
+ * String s = Integer.toString(a); String s2 = Integer.toString(a);
+ * System.out.println(s==s2); String s3 = "10"; String s4 = "10";
+ * System.out.println(s3==s4);
+ */

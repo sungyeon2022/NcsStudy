@@ -1,0 +1,12 @@
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class W3Day5 {
+	static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		int[] arr = {12, 57, 33, -1};
+		int[] arr2 = arr;
+	}
+
+}

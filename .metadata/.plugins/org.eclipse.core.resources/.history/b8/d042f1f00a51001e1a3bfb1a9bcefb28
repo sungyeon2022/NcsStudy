@@ -1,0 +1,16 @@
+
+public class monte {
+
+	public static void main(String[] args) {
+		int cnt = 0;
+		double x = Math.random()*1;
+		double y = Math.random()*1;
+		while (true) {
+			
+			cnt++;
+			System.out.println(cnt);
+		}
+
+	}
+
+}

@@ -1,0 +1,39 @@
+import java.util.*;
+
+class Solution {
+    public  int[] solution(String[] park, String[] routes) {
+    	
+        int[] answer = {};
+        int max_x = park[0].length();
+        int max_y = park.length;
+        int start[]= new int[2];
+        for(int i = 0;i<park.length;i++) {
+        	if(park[i].contains("S")) {
+        	start[1] = park[i].indexOf("S");
+        	start[0] = i;
+        	}
+        }
+        System.out.println(/*Arrays.toString*/max_x,max_y);
+        return answer;
+    }
+	/*
+	 * public int mw() {
+	 * 
+	 * }
+	 */
+}
+
+
+public class Std {
+
+	public static void main(String[] args) {
+		Solution sol = new Solution();
+		String[] c = {"SOO","OXX","OOO"};
+		String[] r = {"E 2","S 2","W 1"};
+		sol.solution(c, r);
+		int a  = 10;
+		/**/
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+import java.util.*;
+public class check {
+
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int count = sc.nextInt();
+	for(int i = 1; i<=count;i++) {
+		int num = 1;
+		while (true) {
+			int cnt = 0;
+			for(int j = 1;j<=num;j++) {
+				if(num%j==0) {
+					System.out.print(num+" ");
+				}
+				num++;
+			}
+		}
+	}
+			
+	}
+}

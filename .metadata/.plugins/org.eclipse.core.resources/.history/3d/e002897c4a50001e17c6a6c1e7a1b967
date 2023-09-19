@@ -1,0 +1,17 @@
+import java.util.*;
+public class check {
+
+	public static void main(String[] args) {
+		for(int i = 0; i<10;i++) {
+			System.out.print((int)Math.random()*9);
+		}
+		System.out.println();
+		for(int i = 0; i<10;i++) {
+			System.out.print(((int)Math.random()*5)+1);
+		}
+		System.out.println();
+		for(int i = 0; i<10;i++) {
+			System.out.print(((int)Math.random()*5)-10);
+		}
+	}
+}

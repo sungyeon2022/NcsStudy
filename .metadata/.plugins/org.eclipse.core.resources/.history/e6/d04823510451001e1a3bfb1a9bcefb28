@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class test {
+
+	public static void main(String[] args) {
+		double num = 4;
+		double result = 0;
+		double compare = 0;
+		double i = 1;
+		while (true) {
+			result = compare;
+			result += (num/i);
+			compare = result;
+			i+=2;
+			System.out.println(result);
+			compare -= (num/i);
+			i+=2;
+			System.out.println(compare);
+			if(Math.floor(result*10000000) == Math.floor(compare*10000000)) {
+				break;
+			}
+			double answer = (1 - Math.floor(result*10000000)/4)/Math.floor(result*10000000;
+		}
+	}
+}

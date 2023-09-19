@@ -1,0 +1,99 @@
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Submit3301 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+//		int sosu = sc.nextInt();
+//		boolean issosu = true;
+//		for (int i = 2; i < sosu; i++) {
+//			if (sosu % i == 0)
+//				issosu = false;
+//		}
+//		if (issosu)
+//			System.out.println("소수");
+//		else
+//			System.out.println("소수아님");
+//		
+//		//소수 판별 종료
+//		
+//		int a = 1;
+//		int b = 1;
+//		System.out.print(a+" ");
+//		System.out.print(b+" ");
+//		for(int i = 0;i<8;i++) {
+//			int c=a+b;
+//			System.out.print(c+" ");
+//			a=b;
+//			b=c;
+//		}
+//		System.out.println();
+//		//피보나치 종료
+//		
+//		for(int i = 0;i<20;i++) {
+//			int num = (int)(Math.random()*12)-1;
+//			System.out.print(num+" ");
+//		}
+//		
+//		System.out.println();
+//		//난수 -1~10 20개 출력 종료
+//		
+//		int[] arr = new int[6];
+//		
+//		for(int i = 0;i<arr.length;i++) {
+//			arr[i]=(int)(Math.random()*9)+1;
+//		}
+//		System.out.println(Arrays.toString(arr));
+//		
+//		int oddcnt= 0;
+//		
+//		for(int i = 0;i<arr.length;i++) {
+//			if(arr[i]%2!=0) oddcnt++;
+//		}
+//		System.out.println(oddcnt);
+//		
+//		//6개 짜리 1~9까지 난수 배열 생성 출력, 배열내 홀수 개수 출력 종료
+//		System.out.print("몇 과목인가요? ");
+//		int subject = sc.nextInt();
+//		int[] subjectarr = new int[subject];
+//		int sum = 0;
+//		int maxsubject = -2_147_483_648;
+//		
+//		for(int i = 0;i<subject;i++) {
+//			System.out.print("과목"+(i+1)+"의 점수 입력 : ");
+//			subjectarr[i] = sc.nextInt();
+//			sum += subjectarr[i];
+//			if(maxsubject<subjectarr[i]) maxsubject = subjectarr[i];
+//		}
+//		System.out.println("입력한 점수 :"+Arrays.toString(subjectarr));
+//		System.out.println("총점 : "+sum);
+//		System.out.println("평균 : "+sum/subject); //정수
+//		System.out.println("최대 : "+maxsubject); 
+		
+		//과목 개수 각 과목 점수 입력 후 배열 형식 출력, 총점, 평균, 최대 출력 종료
+		int[] numarr = new int[6];
+		int numarrsum=0;
+		for(int i = 0 ;i<numarr.length;i++) {
+			numarr[i] = (int)(Math.random()*10)+1;
+			numarrsum+=numarr[i];
+		}
+		System.out.print("배열 : ");
+		for(int i = 0;i<numarr.length;i++) System.out.print(numarr[i]+" ");
+		System.out.println(); //줄바꿈
+		System.out.println("평균 : "+((double)numarrsum/(double)numarr.length));
+		System.out.print("평균보다 큰 요소 : ");
+		for(int i = 0;i<numarr.length;i++) {
+			if(numarr[i]>numarrsum/numarr.length) System.out.print(numarr[i]+" ");
+		}
+		//6개 1~10 난수 배열 생성 출력, 배열 평균, 평균 이상 값
+		
+		int[] arr2 = new int[5];
+		for(int i = 0;i<arr2.length;i++) {
+			arr2[i] = (int)(Math.random()*11)-5;
+		}
+		System.out.println(Arrays.toString(arr2));
+	}
+
+}

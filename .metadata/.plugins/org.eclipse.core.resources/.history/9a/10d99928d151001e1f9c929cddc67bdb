@@ -1,0 +1,24 @@
+
+public class mypractice {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public int[] Array10() {
+		int [] answer = new int[10];
+		for(int i = 0; i < answer.length-1;i++) {
+			answer[i]=(int)(Math.random()*20)+1;
+		}
+		for(int i = 0;i<answer.length;i++) {
+			int temp = answer[i];
+			for(int j = i+1;j<answer.length;j++) {
+				if(temp>answer[j]) {
+					
+				}
+			}
+		}
+		return answer;
+	}
+	
+}

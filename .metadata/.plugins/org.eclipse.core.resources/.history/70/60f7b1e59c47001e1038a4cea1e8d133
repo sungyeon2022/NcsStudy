@@ -1,0 +1,22 @@
+import java.util.*;
+
+class Solution {
+    public int solution(int[] picks, String[] minerals) {
+        int answer = 0;
+        return answer;
+    }
+}
+
+
+public class Std {
+
+	public static void main(String[] args) {
+		Solution sol = new Solution();
+		String[][] c = { {"science", "12:40", "50"}, {"music", "12:20", "40"},
+				{"history", "14:00", "30"},{"computer", "12:30", "100"} };
+		System.out.print(Arrays.toString(sol.solution(c)));
+		int a  = "10";
+		Integer.toString(a);
+	}
+
+}

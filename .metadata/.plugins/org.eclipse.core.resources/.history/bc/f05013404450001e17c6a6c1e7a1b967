@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class fido {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = 1;
+		int b = 1;
+		int want = sc.nextInt();
+		int cnt = 2;
+		while (true) {
+			int c= a+b;
+			if(c==want) {
+				break;
+			}
+			a=b;
+			b=c;
+		}
+	}
+
+}

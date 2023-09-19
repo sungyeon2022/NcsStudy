@@ -1,0 +1,21 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class q1201 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int cnt = sc.nextInt();
+		int sum = 0;
+		int[] a = new int[cnt];
+		for(int i = 0 ; i < a.length; i++) {
+			System.out.println("과목"+i+"의 점수 입력 : ");
+			a[i]=sc.nextInt();
+			sum+=a[i];
+		}
+		System.out.println(Arrays.toString(a));
+		System.out.println(sum);
+
+	}
+
+}

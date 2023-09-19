@@ -1,0 +1,6 @@
+
+public class arrayroll {
+	public static void main(String[] args) {
+		int[][] arr = {{3,6,2},{1,5,7},{4,9,8}};
+	}
+}

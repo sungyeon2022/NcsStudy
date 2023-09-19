@@ -1,0 +1,25 @@
+import java.util.*;
+public class check {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char i = sc.next().charAt(0);
+		if(Character.isUpperCase(i)) {
+			int check = (int)i;
+			while (check<123) {
+				i=(char)check;
+				System.out.println(i);
+				check++;
+			}
+		}
+		if(Character.isLowerCase(i)) {
+			int check = (int)i;
+			System.out.println(check);
+			while (check<91) {
+				i=(char)check;
+				System.out.println(i);
+				check++;
+			}
+		}
+	}
+}

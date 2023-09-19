@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class q1201 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int cnt = sc.nextInt();
+		int[] a = new int[cnt];
+		for(int i = 0 ; i < a.length; i++) {
+			
+		}
+
+	}
+
+}

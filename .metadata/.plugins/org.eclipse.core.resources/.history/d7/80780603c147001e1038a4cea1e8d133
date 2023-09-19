@@ -1,0 +1,103 @@
+import java.util.*;
+
+class Solution {
+	int maxx;
+	int maxy;
+    public  int[] solution(String[] park, String[] routes) {
+    	
+        int[] answer = {};
+        maxx = park[0].length();
+        maxy = park.length;
+        int start[]= new int[2];
+        for(int i = 0;i<park.length;i++) {
+        	if(park[i].contains("S")) {
+        	start[1] = park[i].indexOf("S");
+        	start[0] = i;
+        	}
+        }
+        for(int i = 0; i < routes.length;i++) {
+        	String[] moving = routes[i].split(" ");
+        	String dir = moving[0];
+        	if(dir.matches("E")) {
+        		start[1] = me(park, Integer.parseInt(moving[1]), start);
+        		System.out.println(Arrays.toString(start));
+        	}else if (dir.matches("W")) {
+        		start[1] = mw(park, Integer.parseInt(moving[1]), start);
+        		System.out.println(Arrays.toString(start));
+			}
+        	else if (dir.matches("N")) {
+        		start[0] = mn(park, Integer.parseInt(moving[1]), start);
+        		System.out.println(Arrays.toString(start));
+        	}
+        	else if (dir.matches("S")) {
+        		start[0] = ms(park, Integer.parseInt(moving[1]), start);
+        		System.out.println(Arrays.toString(start));
+        	}
+        }
+        System.out.println(Arrays.toString(start));
+        return start;
+    }
+    public int mw(String[] park ,int dis, int[] loca) {
+    	int indexloca = 0;
+		for(int i = 1;i<=dis;i++) {
+			indexloca = loca[1];
+			if(indexloca-1<0||(Character.toString(park[loca[0]].charAt(indexloca-1)).matches("X"))) {
+				break;
+			}else {
+				indexloca -= 1;
+			}
+		}
+    	return indexloca;
+    }
+    public int ms(String[] park ,int dis, int[] loca) {
+    	int indexloca = 0;
+		for(int i = 1;i<=dis;i++) {
+			indexloca = loca[0];
+			if(indexloca+1>maxy||(Character.toString(park[indexloca+1].charAt(0)).matches("X"))) {
+				continue;
+			}else {
+				indexloca += 1;
+			}
+		}
+    	return indexloca;
+    }
+    public int me(String[] park ,int dis, int[] loca) {
+    	int indexloca = 0;
+		for(int i = 1;i<=dis;i++) {
+			indexloca = loca[1];
+			if(indexloca+1>maxx||Character.toString(park[loca[0]].charAt(indexloca+1)).matches("X")) {
+				break;
+			}else {
+				indexloca += 1;
+			}
+		}
+    	return indexloca;
+    }
+    public int mn(String[] park ,int dis, int[] loca) {
+    	int indexloca = 0;
+		for(int i = 1;i<=dis;i++) {
+			indexloca = loca[0];
+			if(indexloca-1<0||Character.toString(park[indexloca-1].charAt(0)).matches("X")) {
+				break;
+			}else {
+				indexloca -= 1;
+			}
+		}
+    	return indexloca;
+    }
+}
+
+
+public class Std {
+
+	public static void main(String[] args) {
+		Solution sol = new Solution();
+		String[] c = {"SOO","OOO","OOO"};
+		String[] r = {"E 2","S 2","W 1"};
+		sol.solution(c, r);
+		int a  = 10;
+		/**/
+		
+	}
+
+}

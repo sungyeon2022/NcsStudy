@@ -1,0 +1,23 @@
+import java.util.*;
+
+class Solution {
+    public int solution(int[] picks, String[] minerals) {
+        int answer = 0;
+        return answer;
+    }
+}
+
+
+public class Std {
+
+	public static void main(String[] args) {
+		Solution sol = new Solution();
+		String[] c = {"SOO","OOO","OOO"};
+		String[] r = {"E 2","S 2","W 1"};
+		
+		int a  = 10;
+		/**/
+		
+	}
+
+}

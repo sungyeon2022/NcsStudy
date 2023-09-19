@@ -1,0 +1,11 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class q1201 {
+
+	public static void main(String[] args) {
+		boolean[] a = boolean[10];
+
+	}
+
+}

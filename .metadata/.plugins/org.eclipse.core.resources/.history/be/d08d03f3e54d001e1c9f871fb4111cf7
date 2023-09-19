@@ -1,0 +1,21 @@
+import java.util.*;
+public class check {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = 1;
+		while(true) {
+			if(a%2 != 0) {
+				continue;
+				a++;
+			}
+			if(a>20) {
+				break;
+			}
+			System.out.println(a);
+			
+		}
+		
+	}
+
+}

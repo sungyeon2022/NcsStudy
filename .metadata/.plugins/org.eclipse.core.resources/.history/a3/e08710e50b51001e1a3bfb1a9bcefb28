@@ -1,0 +1,20 @@
+
+public class monte {
+
+	public static void main(String[] args) {
+		double cnt = 0;
+		double isquadrant = 0;
+		double x = (Math.random()*100001);
+		double y = (Math.random()*100001);
+		while (true) {
+			if((x*x)+(y*y)<=1) {
+				isquadrant++;
+			}
+			cnt++;
+			
+			System.out.println((int)x);
+		}
+
+	}
+
+}

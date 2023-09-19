@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class help {
+	public static void main(String[] args) {
+		for(int i = 1;i<=100;i++) {
+			System.out.println((i%2)!=0&&(i%3)!=0);
+			
+					
+		}
+
+	}
+
+}
+
+
+
+/* String s = Integer.toString(a); String s2 = Integer.toString(a);
+* System.out.println(s==s2); String s3 = "10"; String s4 = "10";
+* System.out.println(s3==s4);*/
+

@@ -1,0 +1,25 @@
+import java.util.*;
+import java.util.Spliterator.OfPrimitive;
+
+public class help {
+	public static void main(String[] args) {
+		int[] num = new int[1001];
+		int i = 0;
+		int j =2;
+		while (i<num.length) {
+			
+		}
+		System.out.println(Arrays.toString(num));
+		Scanner sc = new Scanner(System.in);
+		int check = sc.nextInt();
+	}
+		
+		
+
+}
+
+/*
+ * String s = Integer.toString(a); String s2 = Integer.toString(a);
+ * System.out.println(s==s2); String s3 = "10"; String s4 = "10";
+ * System.out.println(s3==s4);
+ */

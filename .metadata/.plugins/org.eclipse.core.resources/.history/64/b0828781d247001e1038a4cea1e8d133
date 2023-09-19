@@ -1,0 +1,25 @@
+import java.util.*;
+
+class Player{
+	public int[][] moveright(int[][] map){
+		int[][] a = {{1},{2}};
+		return a;
+	}
+}
+
+public class help {
+	public static void main(String[] args) {
+	int[] a = {};
+	Player play = new Player();
+	  
+
+	
+
+}
+
+
+
+/* String s = Integer.toString(a); String s2 = Integer.toString(a);
+* System.out.println(s==s2); String s3 = "10"; String s4 = "10";
+* System.out.println(s3==s4);*/
+

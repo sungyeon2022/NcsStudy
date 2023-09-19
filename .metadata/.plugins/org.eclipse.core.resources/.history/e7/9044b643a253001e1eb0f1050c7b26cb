@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class check {
+
+	public static void main(String[] args) {
+		int[] arr = new int[5];
+		int temp;
+		arr[0] = (int) (Math.random() * 10) + 1;
+		for (int i = 1; i < arr.length; i++) {
+			temp = (int) (Math.random() * 10) + 1;
+			for(int j = 0; j < i;j++) {
+				if(arr[j]==temp) {
+					i--;
+					break;
+				}else {
+					arr[i]=temp;
+				}	
+			}
+		}
+		
+		Arrays.sort(arr);
+		System.out.println(Arrays.toString(arr));
+		System.out.println(arr[2]);
+	}
+	public static void name() {
+		
+	}
+}
